@@ -58,6 +58,26 @@ Pick one:
 
 That's it. From now on, open the Claude app on your phone at 7pm and say **"log my day"**. Voice input works well here.
 
+## Using it on your phone
+
+Setup (steps 1 to 5) is done once on **claude.ai in a browser**. A phone browser works, but a computer is easier. After that, everything happens in the **Claude mobile app**, which uses the same account, so your skill and connectors are already there.
+
+| When | On your phone |
+|---|---|
+| 7pm | A **"Brag Doc: 3 minutes for today?"** email arrives in your Gmail |
+| Then | Open the **Claude app**, start a new chat, tap the **mic** and say *"log my day"* |
+| 3 minutes | Answer the 5 questions by voice or text. Claude saves the entry to your Drive |
+| Leave | Say *"I'm on leave from 5 to 12 October"*. No emails until you're back |
+| Thursday | Say *"weekly update for my manager"*. The draft appears in your Gmail app to review and send |
+| End of quarter | Say *"prepare my Q3 review"*. Claude gives you a Word file you can open, share or save as PDF |
+
+### Setting up the smart reminder (no coding)
+1. On a computer, go to **claude.ai/code/routines** and create a new routine.
+2. Paste the reminder prompt from [`brag-doc/references/routine-setup.md`](brag-doc/references/routine-setup.md).
+3. Schedule: **every workday, hourly from 7pm to 10pm** in your time zone.
+4. Attach the **Google Drive** and **Gmail** connectors, then save.
+5. Click **Run now** once. After you've logged a day, it should report "entry found, no reminder".
+
 ## Things you can say
 
 | Say | What happens |
@@ -88,6 +108,12 @@ brag-doc/
 ```
 
 See [`examples/`](examples/) for a sample review built from fictional data.
+
+## Troubleshooting
+
+**"Insufficient scope" or Claude can't find or create files in Drive.** When you connected Google Drive, not all permissions were granted. Go to **Settings → Connectors → Google Drive**, disconnect, connect again, and **tick every permission box** on Google's screen.
+
+**No reminder email.** Check your routine at claude.ai/code/routines and open its last run. "Entry found" means you had already logged that day. Also check your Gmail spam folder the first time.
 
 ## Known limits
 
