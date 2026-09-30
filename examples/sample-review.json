@@ -1,0 +1,34 @@
+{
+  "person": {"name": "Sara Ahmed", "title": "Senior FP&A Analyst", "manager": "Omar Khalid"},
+  "period": {"label": "Q3 2026", "start": "2026-07-01", "end": "2026-09-30"},
+  "summary": "This quarter I focused on shortening the month-end close and getting the 2027 budget process started early. Close time dropped from 8 to 5 working days, and budget templates reached all six departments three weeks ahead of plan. Outside my objectives, I trained sales ops to self-serve their revenue dashboard.",
+  "kpis": [
+    {"value": "8 → 5", "label": "Close days"},
+    {"value": "3 wks", "label": "Budget ahead of plan"},
+    {"value": "6 / 6", "label": "Departments onboarded"},
+    {"value": "-40%", "label": "Ad-hoc data requests"}
+  ],
+  "objectives": [
+    {"id": "O1", "title": "Reduce month-end close time", "measure": "5 working days by Q4", "status": "Achieved",
+     "achievements": [
+       {"result": "Cut month-end close from 8 to 5 working days", "situation": "Close ran 8 days because 8 bank reconciliations were manual", "task": "I owned the reconciliation step", "action": "I automated 6 of 8 reconciliations in Power Query and set a daily bank-file check", "stakeholders": ["Treasury", "Accounting"]},
+       {"result": "Bank reconciliation for 3 accounts now takes 2 hours instead of 1 day", "action": "Built a fuzzy-match reconciliation template reused by Accounting"}
+     ]},
+    {"id": "O2", "title": "Build the 2027 budget model", "measure": "Approved by Nov 30", "status": "On track",
+     "achievements": [
+       {"result": "Budget templates reached all 6 departments 3 weeks ahead of plan", "situation": "Last year templates went out late and 2 departments missed the deadline", "action": "I simplified the template to one tab per department and ran 6 walkthroughs", "stakeholders": ["Department heads"]}
+     ]},
+    {"id": "O3", "title": "Improve forecast accuracy", "measure": "Within 5%", "status": "At risk", "achievements": []}
+  ],
+  "stakeholders": [
+    {"name": "Treasury team", "work": "Bank file formats and reconciliation automation"},
+    {"name": "Department heads (6)", "work": "2027 budget templates and walkthroughs"},
+    {"name": "Sales ops", "work": "Revenue dashboard training"}
+  ],
+  "extra_mile": [
+    {"title": "Sales ops self-service", "action": "Trained 2 sales ops analysts on the revenue dashboard", "result": "Ad-hoc data requests to FP&A fell 40%"},
+    {"title": "New-joiner onboarding", "action": "Wrote a 1-page close checklist for new analysts", "result": "Used by the team for every close since August"}
+  ],
+  "learning": {"skills": ["Power Query fuzzy matching", "Running budget workshops"], "development_area": "Forecast accuracy: I am building a driver-based model with Sales for Q4."},
+  "references": []
+}
